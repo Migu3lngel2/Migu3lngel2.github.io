@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 1024px;
+}
+
+
+#container{
+    padding: 0 auto;
+    width: 95%;
+}
+#content{
+    display: flex;
+}
+#content #izquierda{
+    width: 50%;
+    margin-left: 130px;
+    color: white;
+}
+#izquierda h2{
+    color: white;
+    padding-bottom: 100px;
+    font-size: 30px;
+}
+#content #derecha{
+    width: 30%;
+    padding-top: 150px;
+
+}
+#derecha #menu2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+
+}
+#menu2 li{
+    margin: 0;
+    padding-top: 5px;
+    
+}
+#menu2 li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 14px;
+}
+#menu2 li a:hover{
+    color: aqua;
+    
+}
+
+#derecha h1{
+    font-size: 100px;
+    color: white;
+
+}
+#derecha p{
+    color: white;
+    font-size: 20px;
+}
+#derecha #linea{
+    
+        position: relative;
+        width: 100%;
+        height: 1px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+}
+#derecha #caja{
+    display: flex;
+    justify-content: space-between;
+}
+#caja.cajas{
+    color: #FFFFFF;
+ 
+}
+.cajas p{
+    font-size: 15px;
+    
+}
+.cajas h3{
+    font-size: 25px;
+    color: #FFFFFF;
+}
+body #hamburguesa,#close{
+    display: none;
+    background-color: #FFFFFF;
+}
+#menu li:nth-child(2){
+    border-bottom: 5px solid #FFFFFF;
+}
+@media (min-width:600px) and (max-width:1000px) {
+    hr{
+        display: none;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg");
+    }
+    header{
+        padding-right: 150px;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #derecha{
+        width: 100%;
+        padding-left: 150px;
+    }      
+        
+}
+@media (max-width:600px) {
+    body #hamburguesa,#close{
+        display: block;
+        position: absolute;
+        top: 38px;
+        right: 0;
+
+    }
+    #close{
+        display: none;
+    }
+    #logo{
+        width: 13%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    header #menu{
+        display: none;
+        background-color: #464647;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        padding: 60px 0;
+        width: 60%;
+        
+    }
+    #menu li{
+        margin: 60px auto;
+    }
+    hr {
+        display: none;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #contentainer{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        width: 80%;
+    }
+    #content{
+        justify-content: center;
+        flex-direction: column;
+    }
+    #derecha{
+        padding-left: 150px;
+    }  
+   
+   
+   
+
+    
+
+}

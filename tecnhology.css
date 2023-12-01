@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 1024px;
+}
+#container{
+    width: 95%;
+    margin: 0 auto;
+}
+#menu li:nth-child(4){
+    border-bottom: 5px solid #FFFFFF;
+}
+#content{
+    display: flex;
+
+}
+#content #izquierda{
+    width: 40%;
+    display: flex;
+    padding-left: 110px;
+
+}
+#izquierda #numero{
+    margin-top: 123px;
+    
+
+}
+#numero li{
+    margin: 0;
+    border-bottom: 1px;
+    list-style: none ;
+    padding-top: 45px;
+
+}
+#numero li a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 14px;
+    font-size: 30px;
+    
+    
+
+}
+#menu li a:hover{
+    color: aqua;
+}
+#izquierda #texto{
+    padding-left: 50px;
+
+}
+#texto h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 90px;
+     
+}
+#texto h3{
+    color: rgb(91, 96, 99);
+}
+#texto h1{
+    font-size: 60px;
+    color: #ffff;
+}
+#texto p{
+    color: #ffff;
+     font-size: 20px;
+}
+#content #derecha{
+    width: 30%;
+    margin-left: 127px;
+}
+body #hamburguesa,#close{
+    display: none;
+    background-color: #FFFFFF;
+
+}
+@media (min-width:600px) and (max-width:1000px) {
+    hr{
+        display: none;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg");
+        background-size: 100% 100%;
+        min-width: 1024px;
+    }
+    header{
+        padding-right: 150px;
+    }
+    #container{
+        width: 100%;
+        
+    }
+    #content{
+        flex-direction: column;
+    }
+    #izquierda{
+        flex-direction: column;
+    }
+    #izquierda #numero{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #derecha{
+        width: 100%;
+    }
+    #derecha img{
+        background-image: url("/space-tourism-website-main/starter-code/assets/technology/image-launch-vehicle-portrait.jpg");
+        height: 200px;
+    }
+
+}
+@media (max-width:600px) {
+    body #hamburguesa,#close{
+        display: block;
+        position: absolute;
+        top: 38px;
+        right: 0;
+
+    }
+    #close{
+        display: none;
+    }
+    #logo{
+        width: 13%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-mobile.jpg");
+        background-size: 100% 100%;
+        min-width: 1024px;
+    }
+    header #menu{
+        display: none;
+        background-color: #464647;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        padding: 60px 0;
+        width: 60%;
+        
+    }
+    #menu li{
+        margin: 60px auto;
+    }
+    hr {
+        display: none;
+    }
+    #content{
+        flex-direction: column;
+
+    }
+    #izquierda{
+        flex-direction: column;
+    }
+    #izquierda #numero{
+        width: 100%;
+    }
+    #numero{
+        display: flex;
+    }
+    #derecha{
+        padding-left: 100px;
+    }
+    #derecha img{
+        height: 150px;
+        
+    }
+
+}
+   

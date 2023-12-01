@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/space-tourism-website-main/starter-code/assets/crew/background-crew-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 1024px;
+}
+#container{
+    width: 95%;
+    margin: 0 auto;
+}
+#menu li:nth-child(3){
+    border-bottom: 5px solid #FFFFFF;
+}
+#content{   
+    display: flex;
+   
+
+}
+#content #izquierda{
+    width: 40%;
+    color: white;
+    justify-content: space-between;
+
+}
+#izquierda h2{
+    padding-left: 110px;
+    font-size: 40px;
+
+}
+#izquierda h3{
+    padding-left: 110px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 120px;
+    color: rgb(100, 96, 94);
+}
+#izquierda h1{
+    padding-left: 110px;
+    font-size: 80px;
+    
+}
+#izquierda p{
+    font-size: 20px;
+    padding-left: 110px;
+}
+#content #derecha{
+    width: 30%;
+    padding-left: 130px;
+
+}
+#puntos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-left: 110px;
+     color: aliceblue;
+    width: 222px;
+    list-style: none;
+
+
+}
+#puntos.punto{
+    background-color: rgba(0,44,1,0.9);
+     width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: #FFFFFF;
+
+
+}
+.punto a {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+    font-size: 50px;
+}
+.punto li a:hover{
+    color: aqua;
+}
+body #hamburguesa,#close{
+    
+    display: none;
+    background-color: #FFFFFF;
+
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+    hr{
+        display: none;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg");
+    }
+    header{
+        padding-right: 100px;
+    }
+    #content{
+        width: 100%;
+        flex-direction: column;
+    }
+    #izquierda{
+        justify-content: center;
+    }
+    #izquierda h2{
+        font-size: 30px;
+    }
+   #izquierda h3{
+    font-size: 30px;
+   padding-left: 300px;
+   }
+   #izquierda h1{
+   width: 100%;
+    padding-left: 270px;
+   }
+   #izquierda p{
+    width:100% ;
+    padding-left: 250px;
+   }
+  #puntos{
+    padding-left: 200px;
+  }
+}
+@media (max-width:600px) {
+    body #hamburguesa,#close{
+        display: block;
+        position: absolute;
+        top: 38px;
+        right: 0px;
+
+    }
+    #container{
+        width: 100%;
+        
+    }
+    #close{
+        display: none;
+    }  
+    #logo{
+        width: 13%;
+    }
+    #logo img{
+        width: 100%;
+    }
+    header #menu{
+        display: none;
+        background-color: #464647;
+        position: absolute;
+        top: 0;
+        right:0 ;
+        bottom: 0;
+        top: 0;
+        flex-direction: column;
+        padding: 60px 0;
+        width: 60%;
+        
+    }
+    #menu li{
+        margin: 60px auto;
+    }
+    hr {
+        display: none;
+    }
+    body{
+        background-image: url("/space-tourism-website-main/starter-code/assets/crew/background-crew-mobile.jpg");
+        background-size: 100% 100%;
+        min-width: 1024px;
+        
+    }
+    #content{
+       display: block;
+    }
+    #derecha{
+        position: absolute;
+        width: 100%;
+        height: 340px;
+        
+
+    }
+    #derecha img{
+        
+        display: block;
+        height: 340px;
+        
+        left: 0;
+         border-bottom: solid 0.1em #484a53;
+    }
+    
+}
